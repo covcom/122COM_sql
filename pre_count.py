@@ -3,7 +3,6 @@ import sqlite3 as sql
 
 def main():
 	sqliteFile = 'pokedex.sqlite'
-	con = None
 
 	try:
 		con = sql.connect(sqliteFile)
@@ -26,8 +25,7 @@ def main():
 		print("Error %s:" % e.args[0])
 
 	finally:
-		if con:
-			con.close()
+		con.close()
 
 if __name__ == '__main__':
 	sys.exit(main())
