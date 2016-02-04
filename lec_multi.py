@@ -9,5 +9,5 @@ print(cur.fetchone()[0])
 cur.execute('SELECT * FROM staff;')
 for row in cur:
     pass
-	
+    
 con.close()

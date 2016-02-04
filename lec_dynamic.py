@@ -9,4 +9,4 @@ cur.execute('''SELECT forename, surname FROM staff
                WHERE job = ?;''', (question,))
 
 for row in cur:
-    print('%s %s' % row)	
+    print('%s %s' % row)    
