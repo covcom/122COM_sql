@@ -8,5 +8,5 @@ people = [('Simon','Tam','Doctor'), ('River','Tam',None)]
 cur.executemany('''INSERT INTO staff (forename, surname, job)
                    VALUES (?,?,?)''', people)
 
-con.commit()
+cur.commit()
 con.close()
